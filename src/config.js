@@ -57,7 +57,11 @@ export function getData(){
 
 export function updateData(data) {
     let dataArray=getData()
-    dataArray.push(data)
+    if(dataArray){
+        dataArray.push(data)
+    } else{
+        dataArray=[]
+    }
     let Data = JSON.stringify(dataArray)
     localStorage.setItem('data',Data)
 }
