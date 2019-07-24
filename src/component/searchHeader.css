@@ -1,0 +1,52 @@
+.search-container {
+    width: 100%;
+    height: 50px;
+    position: relative
+}
+
+.combine {
+    width:945px;
+    height:36px;
+    border-radius: 25px;
+    position: relative;
+    top: 7px;
+    left: 8px;
+    background-color: #7f8c8d
+}
+
+.search-container a:nth-of-type(1) {
+    display: block;
+    position: absolute;
+    width:40px;
+    height:30px;
+    background-image:url('../image/left.svg');
+    font-size:0;
+    background-size:35px;
+    background-position:center;
+    background-repeat: no-repeat;
+    top: 3px;
+}
+
+input {
+    width: 855px;
+    height: 34px;
+    border: none;
+    margin-left:40px;
+    background-color: #7f8c8d;
+    cursor:default;
+    font-size: 20px;
+    outline-style: none;
+}
+
+.locate {
+    width:55px;
+    height:30px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    font-size:0;
+    background-image:url('../image/location-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}

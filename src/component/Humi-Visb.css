@@ -1,0 +1,52 @@
+.mes2 {
+    width: 500px;
+    height: 125px;
+    background-color:rgba(223,230,241,0.3);
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.humidity,.uv {
+    width: 100%;
+    height: 50%;
+    line-height: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.back-pic {
+    width: 20%;
+    height: 100%;
+    background-image:url('../image/humidity.svg');
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.back-pic + pre {
+    width: 80%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    margin-right: 20px;
+}
+
+.uv-pic {
+    width: 18.5%;
+    height: 100%;
+    background-image:url('../image/uv.svg');
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.uv-pic + pre {
+    width: 80%;
+    height: 100%;
+    margin-right: 20px;
+}

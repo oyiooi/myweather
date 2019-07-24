@@ -1,0 +1,38 @@
+.bar {
+    height:50px;
+    width: 100%;
+    line-height:50px;
+    position: relative;
+}
+
+.bar a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.bar span {
+    padding-left:54px;
+    font-size: 20px;
+    font-weight: '500';
+}
+
+.bar a:nth-of-type(1) {
+    background-image:url('../image/back.svg');
+    background-size: 30px;
+    background-position:center;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    left: 7px;
+}
+
+.bar a:nth-of-type(2) {
+    background-image:url('../image/add.svg');
+    background-size: 26px;
+    background-position:center;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    right: 18px;
+    top: 2px;
+}

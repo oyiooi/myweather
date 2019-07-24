@@ -1,0 +1,13 @@
+/*search page*/
+.search-page {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color:#bdc3c7;
+}
+
+#map {
+    height: calc(100vh - 50px);
+    background-color: rgb(197, 183, 183);
+    border-radius: 25px 25px 0 0;
+}

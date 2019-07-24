@@ -1,0 +1,49 @@
+.weather-container {
+    width: 400px;
+    height: calc(100vh - 50px);
+    background-color: rgba(25,25,25,0);
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail {
+    width: 350px;
+    height: 300px;
+    background-color:rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: relative; 
+}
+
+.detail p {
+    margin-bottom: 10px;
+}
+
+.left, .right {
+    width: 20px;
+    height: 20px;
+    border: 5px solid rgba(208, 220, 228, 0.6);
+    position: absolute;
+}
+
+.left {
+    left: 0px;
+    top: 44%;
+    transform: rotate(-45deg);
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+.right {
+    right: 0px;
+    top: 44%;
+    transform: rotate(45deg);
+    border-left: 0px;
+    border-bottom: 0px;
+}
