@@ -64,10 +64,9 @@ class App extends Component {
 
   componentDidMount(){
     console.log('o')
-    let position,positionss;
     let weather;
-    if(localStorage.data&&localStorage.data.length>0){
-      positionss = getData()
+    let positionss = getData();
+    if(positionss.length>0){
       for(let i=0;i<positionss.length;i++){
         console.log(positionss[i],this.state.locations)
         fetch(`https://www.tianqiapi.com/api/?version=v6&city=${positionss[i]}`)
@@ -75,7 +74,7 @@ class App extends Component {
             .then(data=>{this.setState((preState)=>{preState.weather.push(data);preState.locations.push({city:positionss[i]});this.forceUpdate()})
       })}
     }else{
-      position = '北京';
+      let position = '北京';
       updateData(position);
       this.setState({locations:[{city:position}]})
       fetch(`https://www.tianqiapi.com/api/?version=v6&city=${position}`)
