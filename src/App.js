@@ -66,7 +66,7 @@ class App extends Component {
     console.log('o')
     let position,positionss;
     let weather;
-    if(localStorage.data){
+    if(localStorage.data&&localStorage.data.length>0){
       positionss = getData()
       for(let i=0;i<positionss.length;i++){
         console.log(positionss[i],this.state.locations)
