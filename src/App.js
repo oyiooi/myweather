@@ -66,7 +66,8 @@ class App extends Component {
     console.log('o')
     let weather;
     let positionss = getData();
-    if(positionss){
+    if(positionss&&positionss.length>0){
+      console.log(positionss)
       for(let i=0;i<positionss.length;i++){
         console.log(positionss[i],this.state.locations)
         fetch(`https://www.tianqiapi.com/api/?version=v6&city=${positionss[i]}`)
@@ -100,7 +101,7 @@ class App extends Component {
         <Route exact path='/location' render={()=><Location locations={locations} shanChu={this.shanChu}></Location>}></Route>
    </div>
       }else{
-        return <div></div>
+        return <div className='loading'></div>
       }
   }
   
