@@ -66,7 +66,7 @@ class App extends Component {
     console.log('o')
     let weather;
     let positionss = getData();
-    if(positionss.length>0){
+    if(positionss){
       for(let i=0;i<positionss.length;i++){
         console.log(positionss[i],this.state.locations)
         fetch(`https://www.tianqiapi.com/api/?version=v6&city=${positionss[i]}`)
