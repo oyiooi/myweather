@@ -2,12 +2,33 @@
     margin: 0;
     box-sizing: border-box;
 }
+@media screen and (max-width: 799px){
+    .container {
+        width: 100vw;
+        height: fit-content;
+    }
+    .message {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .container {
+        width: 1000px;
+        height: 100vh;
+    }
+
+    .message {    
+        width: 600px;
+        height: calc(100vh - 50px);
+        float: right;
+    }
+}
+
 .container {
     color: white;
-    width: 1000px;
     margin:0 auto;
     background-color:black;
-    height: 100vh;
     background-image:linear-gradient(168deg,rgb(75, 15, 153),rgb(143, 44, 138))
 }
 
@@ -29,10 +50,7 @@
 }
 
 .message {
-    width: 600px;
-    height: calc(100vh - 50px);
     background-color:rgba(162,45,45,0);
-    float: right;
     overflow: scroll;
 }
 

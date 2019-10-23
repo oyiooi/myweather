@@ -1,5 +1,17 @@
+@media screen and (max-width: 799px){
+    .weather-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1000px){   
+    .weather-container{
+        width: 400px;
+    }
+}
+
 .weather-container {
-    width: 400px;
     height: calc(100vh - 50px);
     background-color: rgba(25,25,25,0);
     float: left;

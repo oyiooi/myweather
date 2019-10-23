@@ -37,7 +37,7 @@ class Search extends Component {
                     <SearchHeader searchTerm={searchTerm} onShow={this.show} updateSearchTerm={this.updateSearchTerm}></SearchHeader>
                    <div id='map'>
                        <Map></Map>
-                       <AddBar searchTerm={searchTerm} show={show} addLocation={addLocation} addWeather={addWeather}></AddBar>
+                       <AddBar searchTerm={searchTerm} show={show} addLocation={addLocation}></AddBar>
                    </div>
                </div>
     }

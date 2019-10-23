@@ -7,7 +7,7 @@ function AddBar (props) {
 
     return show?<div className='add-location'>
     <span className='city-name'>{searchTerm}</span>
-    <span className='add-buttom' onClick={()=>{addLocation(searchTerm);addWeather(searchTerm)}} ><Link to='/location'>add</Link></span>
+    <span className='add-buttom' onClick={()=>{addLocation(searchTerm)}} ><Link to='/location'>add</Link></span>
 </div>:show===false
 }
 

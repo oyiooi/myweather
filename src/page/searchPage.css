@@ -1,6 +1,16 @@
 /*search page*/
+@media screen and (min-width: 1000px){
+    .search-page{
+        width: 1000px;
+    }
+}
+@media screen and (max-width: 799px){
+    .search-page {
+        width: 100vw;
+    }
+}
+
 .search-page {
-    width: 1000px;
     height: 100vh;
     margin: 0 auto;
     background-color:#bdc3c7;

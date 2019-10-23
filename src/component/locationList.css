@@ -2,8 +2,19 @@ ol{
     padding: 0;
 }
 
+@media screen and (max-width: 799px){
+    ol li {
+        width: calc(100vw - 40px)
+    }
+}
+
+@media screen and (min-width: 1000px){
+    ol li {
+        width: 960px;
+    }
+}
+
 ol li {
-    width: 960px;
     height: 100px;
     list-style: none;
     display: flex;
